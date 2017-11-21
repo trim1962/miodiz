@@ -1,0 +1,73 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = MatDiz.tex
+\chapter{N}
+\vspace{5mm}
+\lemma{NAND}Operazione logica. Tabella di verità associata è~\vref{tab:NfunzioneNAND}
+\begin{table}
+	\scaptiona{Funzione NAND}
+	\label{tab:NfunzioneNAND}
+	\centering
+	\begin{tabular}{ccc}
+		\toprule
+	$A$&$B$&$A\mathbin{\overline{\wedge}}B$\\
+	\midrule
+	0&0&1\\
+	1&0&1\\
+	0&1&1\\
+	1&1&0\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+\lemma{Napier}\index{Napier} Definì i logaritmi inventandone il termine.
+\lemma{Newton Isaac}\index{Newton Isaac}
+\begin{figure}
+	\centering
+	\scaptionb{Isaac Newton (1642-1727)}
+	\label{fig:godfreykneller-isaacnewton-1689}
+	\includegraphics[width=0.7\linewidth]{Figure/N/GodfreyKneller-IsaacNewton-1689}
+\end{figure}
+\lemma{NOT}Operazione logica. Tabella di verità associata è~\vref{tab:NfunzioneNOT}
+\begin{table}
+	\centering
+	\begin{tabular}{cc}%
+		\toprule
+		$A$&$\overline{A}$\\
+		\midrule 
+		1&0\\
+		0&1\\
+		\bottomrule
+	\end{tabular}
+	\scaptiona{Funzione NOT}
+\label{tab:NfunzioneNOT}
+\end{table}
+\lemma{numero}
+\llemma{n. complesso} \llemma{n. irrazionale}Un numero è irrazionale se non è possibile scriverlo come rapporto fra due numeri.\llemma{n. razionale} Un numero è razionale se può essere scritto come rapporto di due numeri interi. Il secondo numero deve essere diverso da zero $q=\frac{a}{b}\quad a,b\in \Z\; b\neq 0$. \llemma{n. trascendente}. \llemma{n. transfinito}
+\begin{figure}%[!htb]
+	\def\FrameCommand{\fboxsep=\FrameSep \colorbox{shadecolor}}% da def\FrameCommand{\fboxsep=\FrameSep\colorbox{shadecolor}}% da "shaded"
+	\begin{MakeFramed}{\advance\hsize-\width \FrameRestore}%    da "framed"
+		\begin{center}%
+			\textcolor{StrongGray}{\textsf{$\sqrt{2}$ è irrazionale}}%
+			\par%
+			\vspace*{-\smallskipamount}%
+			\vrule height 0.8pt width 56mm%
+		\end{center}%
+		\begin{small}%
+			Supponiamo che $\sqrt{2}$ è un numero razionale. Se è razionale allora:
+			\begin{align*}
+		\sqrt{2}=&\dfrac{a}{b}
+		\intertext{con $a$ e $b$ due numeri irriducibili.  Elevando al quadrato}
+		2=&\dfrac{a^2}{b^2}\\
+a^2=&2b^2
+\intertext{quindi se $a^2$ è un multiplo di due $a$ è pari. Ma se $a$ è pari}
+a=&2k\\
+4k^2=&2b^2\\
+b^2=&4k^2\\
+\intertext{quindi se $b^2$ è un multiplo di due $b$ è pari}
+			\end{align*}
+Quindi abbiamo due numeri irriducibili che abbiamo dimostrato essere entrambi pari e quindi riducibili. Assurdo $\sqrt{2}$ non può essere razionale.			
+		\end{small}%
+		\vspace*{-\smallskipamount}%
+	\end{MakeFramed}%
+\end{figure}%
+\lemma{numerabile}Un insieme è numerabile se può essere messo in corrispondenza con l'insieme dei numeri naturali.

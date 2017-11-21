@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{kantlipsum,afterpage,hyperref}
+\begin{document}
+
+\kant[1-3]
+
+\afterpage{
+\begin{figure}
+ Abbildung
+ \caption[Beschriftung im LoF]{echte Beschriftung\footnotemark}
+\end{figure}
+\footnotetext{Eine Fu\ss note}
+}
+
+\kant[4-8]
+
+\end{document}

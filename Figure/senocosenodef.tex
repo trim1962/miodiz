@@ -1,0 +1,28 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-3.5,0.) -- (4,0.);
+%\foreach \x in {-2.,2.,4.,6.}
+%\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+\draw[->,color=black] (0.,-3.5) -- (0.,4);
+%\foreach \y in {-2.,2.,4.}
+%\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+\clip(-3.5,-3.5) rectangle (4.2,4.2);
+\draw [shift={(0.,0.)},color=black,fill=black,fill opacity=0.10000000149011612] (0,0) -- (0.:0.7791219512195124) arc (0.:58.49463866838383:0.7791219512195124) -- cycle;
+\draw(0.,0.) circle (3.cm);
+\draw (0.,0.)-- (1.5677350392954423,2.5577738067634748);
+\begin{scriptsize}
+\draw [fill=black] (0.,0.) circle (1.5pt);
+\draw[color=black] (-0.5295609756097509,-0.3112292682926808) node {$O$};
+\draw [fill=black] (1.5677350392954423,2.5577738067634748) circle (2.5pt);
+\draw[color=black] (1.2104780487804936,1.2989560975609764) node {$R$};
+\draw[color=black] (0.9,0.33803902439024547) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

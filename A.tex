@@ -1,0 +1,176 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = MatDiz.tex
+\chapter{A}
+\vspace{5mm}
+\lemma{adiacente}Attaccato, contiguo \pointsto~\seeentry{s. adiacente}
+\entry{addendo}Termine dell'addizione\pointsto~\seeentry{addizione}.
+\entry{addizione}Operazione che associa a una coppia di numeri, gli addendi, un numero detto somma\pointsto~\seeentry{somma}.
+\lemma{Ahmes} Scriba egiziano che intorno al 1600 a.C trascrisse un papiro risalente a circa tre secoli prima. Tale papiro, noto come papiro di \pointsto~\seeentry{Papiro di Rhind}, è una delle fonti sulla matematica egizia.\index{Ahmes}
+\lemma{algebra} Dall'arabo al-jabr \llemma{algebra booleana}\pointsto~\seeentry{Bool George}\index{Bool George} 
+\lemma{algoritmo}Metodo o processo di calcolo che con regole fisse permette la soluzione di qualsiasi problema.
+\lemma{algebrico}In matematica è un aggettivo che ha vari significati legate al contesto in cui si usa.
+\llemma{a. equazione} Equazione che si ottiene ponendo uguale a zero un polinomio\pointsto~\seeentry{polinomio} $P(x)=0$.\llemma{a. numero}è una radice\pointsto~\seeentry{radice} di una equazione algebrica $P(x)=0$ i cui coefficienti sono tutti numeri razionali.
+\lemma{Aleph-zero}Primo numero transfinito\pointsto~\vedilemma{n. transfinito}, rappresenta la cardinalità dei numeri naturali $\aleph_{0}$.
+\lemma{al-Khwarizmi Muhammad ibn Musa}\index{al-Khwarizmi Muhammad ibn Musa}(780 circa 850) Persiano, matematico, astronomo, astrologo, geometra, nel 820 si trasferì a Baghdad dove fu chiamato a dirigerne la Biblioteca. Scrisse \textit{Al-jabr wa al-muqābala} che fu tradotto da Roberto di Chester\pointsto~\seeentry{Chester Roberto di} nel 1145. In pratica questo libro diede un nome a una materia l'algebra (al-jabr). Scrisse anche libro di cui rimane solo la traduzione latina \textit{Algoritmi de numero Indorum} dove introduce la numerazione indiana con le cifre moderne. Dalla latinizzazione del suo cognome nasce il termine algoritmo\pointsto~\seeentry{algoritmo} \cite{Gheverghese2000}\cite{Kline1972}.
+\lemma{altezza}In un triangolo\pointsto~\seeentry{triangolo} è la perpendicolare\pointsto~\seeentry{perpendicolare} ad un segmento che passa per il vertice opposto\pointsto~\seeentry{o. vertice} al lato.
+\lemma{analisi matematica}Branca della matematica che si è sviluppata a partire del seicento tramite i lavori di Leibniz\pointsto~\vedilemma{Leibniz Gottfried Wilhelm} e Newton\pointsto~\vedilemma{Newton Isaac}. Con l'introduzione del concetto di derivata\pointsto~\vedilemma{derivata} e d'integrale\pointsto~\vedilemma{integrale} è diventata uno strumento indispensabile per la ricerca moderna. 
+\entry{AND}Operazione logica. La tabella di verità associata è~\vref{tab:AfunzioneAND}
+\begin{table}
+	\scaptionb{Funzione AND}
+	\label{tab:AfunzioneAND}
+	\centering
+	\begin{tabular}{ccc}
+	\toprule
+	$A$&$B$&$AB$\\
+	\midrule  
+	0&0&0\\
+	1&0&0\\
+	0&1&0\\
+	1&1&1\\
+	\bottomrule
+\end{tabular}
+\end{table}
+\begin{figure}%[!tb]
+	\def\FrameCommand{\fboxsep=\FrameSep \colorbox{shadecolor}}% da def\FrameCommand{\fboxsep=\FrameSep\colorbox{shadecolor}}% da "shaded"
+	\begin{MakeFramed}{\advance\hsize-\width \FrameRestore}% da "framed"
+		\begin{center}%
+			\textcolor{StrongGray}{\textsf{Da sessa-decimale a sessagesimale}}%
+			\par%
+			\vspace*{-\smallskipamount}%
+			\vrule height 0.8pt width 56mm%
+		\end{center}%
+		\begin{small}%
+			Supponiamo di avere un angolo $\alpha=35.2789^{\circ}$ e di volerlo convertire in sessagesimale. Procediamo come segue
+			\begin{align*}
+			35.2789^{\circ}=&35^{\circ}+0.2789^{\circ}\\
+			0.2789^{\circ}=&(0.2789\cdot 60)^{'}=16.734^{'}\\
+			16.734^{'}=&16^{'}+0.734^{'}\\
+			0.734^{'}=&(0.734\cdot 60 )^{''}=44.04^{''}\\
+			44.04^{''}=&44^{''}+0.04^{''}\\
+			\ang{35.2789}=&\ang{35;16;44}
+			\end{align*}
+			La conversione è ultimata.
+		\end{small}%
+		\vspace*{-\smallskipamount}%
+	\end{MakeFramed}%
+\end{figure}%
+\lemma{anello}Un insieme non vuoto R è un \textit{anello associativo} se in R sono definite due operazioni denominate $+$ e $\cdot$ rispettivamente, tali che per $a,b,c\in\; \R$
+\begin{compactenum}
+	\item $a+b\in R$
+	\item $a+b=b+a$
+	\item $(a+b)+c=a+(b+c)$
+	\item $\exists\; 0\in R\;\text{tale che}\; a+0=a\;\forall a\in R$
+	\item $\exists\; -a\in R\;\text{tale che}\; a+(-a)=0$
+	\item $a\cdot b\in R$
+	\item $(a\cdot b)\cdot c=a\cdot(b\cot c)$
+	\item $a\cdot(b+c)=a\cdot b+a\cdot c$ e $(a+b)\cdot c=a\cdot c+b\cdot c$
+\end{compactenum}
+Le richieste da uno a cinque indicano che R è un gruppo abeliano\pointsto~\vedilemma{g. abeliano} rispetto a $+$. Gli ultimi assiomi indicano che R è chiuso rispetto ad un'operazione associativa\pointsto~\vedilemma{associativa}. \cite{Herstein1989}
+\entry{angolo}Parte di piano compresa fra due semirette\pointsto~\seeentry{semiretta} che hanno la stessa origine. Le semirette sono chiamati lati, l'origine comune vertice. Si usano le lettere latine minuscole per indicare i lati, le lettere latine maiuscole per indicare i vertici e infine le lettere greche per indicare gli angoli.\llemma{a. concavo}Un angolo è concavo se contiene il prolungamento dei propri lati.\llemma{a. convesso}Un angolo è convesso se non è concavo.\llemma{a. giro}Un angolo è giro se è il doppio di un angolo piatto.
+\llemma{a. nullo}Un angolo è nullo se i lati dell'angolo coincidono.\llemma{a. orientato}Dopo aver fissato un ordine tra i lati dell'angolo, un angolo è positivo se per andare dal primo lato al secondo si ruota in senso antiorario. Un angolo è negativo se si ruota in senso orario.\llemma{a. misura}Vi sono tre unità di misura: i gradi sessagesimali con la variante sessa-decimale, i gradi centesimali e i radianti.
+\begin{minitoc}
+	\mttitle{Gradi sessagesimali}
+	\mtssubtitle{Gradi sessa-decimali}
+	\mttitle{Gradi centesimali}
+	\mttitle{Radianti}
+\end{minitoc}
+\mttitle{Gradi sessagesimali}Di origine babilonese,
+un grado sessagesimale è definito come la trecentosessantesima parte di un angolo giro. Ammette come sottomultipli il minuto, uguale alla sessantesima parte di un grado e il secondo, pari alla sessantesima parte di un minuto.
+\begin{align*}
+\ang{1}=&\dfrac{angolo giro}{360}\\
+\ang{;1;}=&\dfrac{\ang{1}}{60}\\
+\ang{;;1}=&\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}
+\end{align*}
+Un angolo viene indicato con $\alpha=x^\circ y'z''$
+\mtssubtitle{Gradi sessa-decimali}
+Nella versione sessa-decimale non si ha 
+la suddivisione fra gradi, minuti e secondi ma l'ampiezza è indicata da un numero decimale. Angoli notevoli: un angolo retto misura \ang{90;;}, un angolo piatto \ang{180;;}.
+\begin{figure}%[!tb]
+	\def\FrameCommand{\fboxsep=\FrameSep \colorbox{shadecolor}}% da def\FrameCommand{\fboxsep=\FrameSep\colorbox{shadecolor}}% da "shaded"
+	\begin{MakeFramed}{\advance\hsize-\width \FrameRestore}% da "framed"
+		\begin{center}%
+			\textcolor{StrongGray}{\textsf{Equivalenze }}%
+			\par%
+			\vspace*{-\smallskipamount}%
+			\vrule height 0.8pt width 56mm%
+		\end{center}%
+		\begin{small}%
+			\begin{align*}
+			\SI{1}{\degree}=&\SI{1.111}{\gon}\\
+			\SI{1}{\degree}=&\SI{0.0175}{\radian}\\
+			\SI{1}{\radian}=&\SI{57.2958}{\degree}\\
+			\SI{1}{\radian}=&\SI{63.662}{\gon}\\
+			\SI{1}{\gon}=&\SI{1.111}{\degree}\\
+			\SI{1}{\gon}=&\SI{0.0157}{\radian}
+			\end{align*}
+		\end{small}%
+		\vspace*{-\smallskipamount}%
+	\end{MakeFramed}%
+\end{figure}%
+\mttitle{Gradi centesimali}
+Il grado centesimale (gon) è pari alla quattrocentesima parte di un angolo giro.
+\begin{align*}
+\SI{1}{\gon}=&\dfrac{angolo giro}{400}\\
+\SI{1}{\cgon}=&\SI{1}{\per\gon\tothe{2}}\\
+\SI{1}{\mgon}=&\SI{1}{\per\gon\tothe{3}}
+\end{align*}
+%\SI{1}{\gon}=\SI[parse-numbers = false]{\left(\frac{10}{9}\right)}{\degree}
+Angoli notevoli: l'angolo retto misura \SI{100}{\gon}, angolo giro\SI{400}{\gon}
+\mttitle{Radianti} Unità di misura dell'ampiezza dell'angolo piano che fa parte del SI\pointsto~\vedilemma{SI}. Simbolo rad. Un angolo ha ampiezza un radiante se presa una qualunque circonferenza, la lunghezza dell'arco intercettato è uguale al raggio. Un angolo giro è \SI{2\pi}{\radian}.
+\llemma{a. piatto}Un angolo è piatto se i lati appartengono alla stessa retta.\llemma{a. retto}Un angolo è retto se uguale alla metà di uno piatto.
+\lemma{anomalia}In un sistema di riferimento polare è l'angolo che il raggio vettore forma con l'asse di riferimento.
+\lemma{appartenenza}Relazione che indica che un elemento appartiene ad un insieme. Simbolo $\in$
+\lemma {apotema}Raggio della circonferenza inscritta\pointsto~\vedilemma{c. iscritta} in un poligono\pointsto~\vedilemma{poligono} regolare.
+\lemma{arco}Parte di curve delimitata da due punti.
+\lemma{arcoseno} Inversa della funzione coseno\pointsto~\vedilemma{coseno} è definita $\funzione{\arccos}{[-1,1]}{[0,\pi]}$. 
+\lemma{arcseno}Inversa della funzione seno\pointsto~\vedilemma{seno} è definita $\funzione{\arcsin}{[-1,1]}{[-\frac{\pi}{2},\frac{\pi}{2}]}$. 
+\lemma{arcotangente}Inversa della funzione tangente\pointsto~\vedilemma{tangente} è definita $\funzione{\arctan}{\R}{(-\frac{\pi}{2},\frac{\pi}{2})}$.\lemma{ascissa}
+\entry{asintoto}L'asintoto è una retta che si avvicina indefinitamente a una curva. 
+\llemma{a. verticale}La funzione\pointsto~\seeentry{funzione}$\funzione{f}{A}{B}$ ha un asintoto verticale per $a\in A$ se
+$
+\lim_{x\to a^+}f(x)=\pm\infty
+$
+oppure
+$
+\lim_{x\to a^-}f(x)=\pm\infty
+$
+\llemma{a. orizzontale}La retta $y=c$ è un asintoto orizzontale per la funzione $\funzione{f}{A}{B}$ se $
+\lim_{x\to\pm\infty}f(x)=c
+$	
+\llemma{a. obliquo}La retta $y=mx+q$ è un asintoto obliquo per la funzione $\funzione{f}{A}{B}$ se
+$
+\lim_{x\to +\infty}[f(x)-(mx+q)]=0
+$
+o analogamente
+$
+\lim_{x\to -\infty}[f(x)-(mx+q)]=0
+$
+\lemma{associativa}Un'operazione binaria è associativa se 
+$
+(a*b)*c=a*(b*c)
+$
+\begin{figure}%[!tb]
+	\def\FrameCommand{\fboxsep=\FrameSep \colorbox{shadecolor}}% da def\FrameCommand{\fboxsep=\FrameSep\colorbox{shadecolor}}% da "shaded"
+	\begin{MakeFramed}{\advance\hsize-\width \FrameRestore}% da "framed"
+		\begin{center}%
+			\textcolor{StrongGray}{\textsf{Da sessagesimale a sessa-decimale}}%
+			\par%
+			\vspace*{-\smallskipamount}%
+			\vrule height 0.8pt width 56mm%
+		\end{center}%
+		\begin{small}%
+		Supponiamo di avere un angolo di $\alpha=\ang{25;40;20}$ e di volerlo convertire in sessa-decimale. Procediamo come segue
+		\begin{align*}
+		\alpha=&25^{\circ}+\left(\dfrac{40}{60}\right)^{\circ}+\left(\dfrac{20}{3600}\right)^{\circ}\\
+		=&25^{\circ}+\left(\dfrac{2400+20}{3600}\right)^{\circ}\\
+		=&25^{\circ}+\left(\dfrac{121}{180}\right)^{\circ}\\
+		\approx&25^{\circ}+0.6722^{\circ}\\
+		\approx&25.6722^{\circ}
+		\end{align*}
+		La conversione è ultimata.
+		\end{small}%
+		\vspace*{-\smallskipamount}%
+	\end{MakeFramed}%
+\end{figure}%
+

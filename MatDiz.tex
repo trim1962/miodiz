@@ -1,0 +1,212 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = MatDiz.tex
+
+\documentclass[openany,10pt,italian]{dictionaryCD}
+\errorcontextlines=9 
+%\usepackage{refcheck}
+\usepackage{lettrine}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+%======New command===============
+%Simbolo per gradi Farenheit
+\newcommand\gradiF{\ensuremath{\,^\circ F}}%Scrittura gradi Farenheit
+%Istruzione \see riscritta: pochissimo usata 
+\newcommand\vedi{\textit{vedi}}
+%frazione in linea
+\newcommand*\smallfrac[2]{\ensuremath{\mathop{{}^{#1}\!/\!_{#2}}\nolimits}}
+%======Per SIunits===============
+%\makeatletter
+%\DeclareRobustCommand{\unit}[1]{\@inunitcommandtrue\ensuremath{\SI@fstyle{\@qsk\period@active{#1}}}}
+%================================
+\renewrobustcmd{\textlatin}[1]{\leavevmode{\latintext#1}}
+\makeatletter
+\def\@Roman#1{\expandafter\@slowromancap\romannumeral#1@}
+%================================
+
+
+
+%===============================
+\includeonly{
+A,
+B,
+C,
+D,
+E,
+F,
+G,
+H,
+I,
+J,
+K,
+L,
+M,
+N,
+O,
+P,
+Q,
+R,
+S,
+T,
+U,
+V,
+W,
+X,
+Y,
+Z,
+}
+\input{../Mod_base/simboli_operatori}
+\makeindex[title={\HUGE Indice dei nomi}]
+\usepackage[autostyle,italian=guillemets]{csquotes}
+%\usepackage[language=italian,backend=biber]{biblatex}
+\usepackage[language=italian,style=philosophy-modern,backend=biber,sorting=ynt,hyperref,bibencoding=utf8,]{biblatex}
+
+\addbibresource{MatDiz.bib}
+\usepackage{standalone}
+\standaloneconfig{mode=buildnew}
+\listfiles
+%\newcommand{\PrintMathFonts}{%
+%	\count255=0
+%	\loop\ifnum\count255<16
+%	(\the\count255:~\fontname\textfont\count255)
+%	\advance\count255 by 1
+%	\repeat}
+\newcolumntype{L}{>{\sffamily $}l<{$}}
+% Geophysics
+\DeclareSIUnit\gon{gon}
+\DeclareSIUnit\cgon{cgon}
+\DeclareSIUnit\mgon{mgon}
+\usepackage{floatrow}
+ \begin{document}
+%	\PrintMathFonts
+\hypersetup{pageanchor=false}
+\setlength{\abovesectionskip}{4.0pt plus 0.5ex}
+\setlength{\belowsectionskip}{-\belowsectionskip}
+%------------------------------------------------
+\lccode`\'=`\' % qualche file di lingua reimposta questo valore in modo globale a zero bisogna quindi restituirgli un valore diverso da zero!
+\onecolumn
+\pagecolor{StrongGray}
+\thispagestyle{empty}
+{\HUGE\bfseries Dizionario di Matematica}
+
+$e^{-i\pi}=-1$
+\vspace{30mm}
+%==========================
+{\topskip=0.1 in
+\vfill
+
+{\hfill{\textsf{\huge{\textbf{Claudio Duchi - 2017} }}}}
+
+%\end{minipage}}%
+\newpage%\pagecolor{white}\cleardoublepage[empty]
+\pagecolor{white}
+\pagestyle{empty}
+\begin{center}
+{\Large\textsc{CLAUDIO DUCHI - dizionario di MATEMATICA}}\\
+\textcolor{rossovivo}{\vrule height 0.8pt width 160mm}\\[\baselineskip]
+\end{center}
+
+{\topskip=.2 in
+\begin{minipage}{155mm}%
+\vspace{80mm}
+\begin{center}
+{\Huge\bfseries Dizionario}\\[8pt]%
+{\Huge\bfseries Glossario di Matematica}\\[8pt]%
+\end{center}
+\end{minipage}}%
+\vfill
+\begingroup
+\begin{center}
+\textcolor{rossovivo}{\vrule height 0.8pt width 160mm}
+\end{center}
+%\footnotesize
+%%\setlength{\parindent}{0pt}
+%%\setlength{\parskip}{\baselineskip}
+%\textsc{PERMESSI DI DISTRIBUZIONE} - \textcopyright\ \& \textcopyleft\ Heinrich F. Fleck - MMXIII\,-\,MMXVI;  Versione 0.07\,-\,A-Z  \\
+%Opera non commerciale liberamente a disposizione    secondo le specifiche di protezione totale nelle modalità garantite dalla licenza Creative Commons per le formule \textit{all rights~reserved} e \textit{no rights reserved}),  \textsf{\textsc{cc by-nc-nd}}: \textit{creativecommons.it}.\\
+%Chiunque abbia in disponibilità questo lavoro potrà diffonderlo con ogni mezzo idoneo, purché conservi inalterati i testi e le specifiche connesse, ma è vietata la trasposizione su siti terzi dell'intera opera o di singole parti di essa: s'intendono soltanto autorizzate citazioni  con riferimento bibliografico; è ammesso da parte di terzi siti web il link  del file PDF al sito dell'autore.%Le traduzioni dei testi, quando non diversamente indicato, sono dell'autore.
+%\\[3pt]
+%\textit{www.heinrichfleck.net/marineria/marineria.html}\,\,-\,\,\textit{heinrich.fleck@yahoo.it}\hfill 
+%\endgroup
+
+
+\newpage 
+%\newpage\textcolor{white}{  A  }
+\thispagestyle{empty}
+
+%\begin{figure}[t!]
+%\centering\includegraphics[width=0.999\linewidth]{vespucci-taranto} \\[6pt]
+%\end{figure}
+%\vfill
+%\begin{flushleft}
+%\textcolor{sufred}{\rule{162mm}{0.3mm}\hspace{2mm}}\\
+%In copertina, il Vespucci fotografato dal (quasi) gemello  Colombo nella metà degli anni trenta; qui sopra, il Vespucci invelato, con vento a 30 nodi, abbandona il mar Piccolo di Taranto  al comando dell'ammiraglio Agostino Straulino\index{Straulino Agostino} (1965); in quarta di copertina ancora il Vespucci ed il Colombo assieme  all'ancora  (1935); \textit{Archivio Storico Marina Militare Italiana}
+%%\end{flushleft}
+
+\frontmatter\pagenumbering{Roman}  %Modificato Claudio 14-01-2014
+ 
+	\hypersetup{pageanchor=true}
+%===============
+\mainmatter 
+\tableofcontents
+\makeatletter
+  \def\@Roman#1{\expandafter\textlatin\expandafter{%
+                \expandafter\@slowromancap\romannumeral#1@}}
+\csname @openrightfalse\endcsname
+%===============
+
+\twocolumn
+\makeatletter
+   \typeout{===========================================}
+   \typeout{Larghezza di colonna pari a \the\columnwidth}
+    \dimen@=0.35145980351\columnwidth
+   \typeout{Larghezza di colonna pari a \strip@pt\dimen@\space mm}
+   \typeout{===========================================}
+\makeatother
+
+\include{A}
+\include{B}
+\include{C}
+\include{D}
+\include{E}
+\include{F}
+\include{G}
+\include{H}
+\include{I}
+\include{J}
+\include{K}
+\include{L}
+\include{M}
+\include{N}
+\include{O}
+\include{P}
+\include{Q}
+\include{R}
+\include{S}
+\include{T}
+\include{U}
+\include{V}
+\include{W}
+\include{X}
+\include{Y}
+\include{Z}
+%------------------------
+%\include{appendice}
+\backmatter
+%include{abbordi}
+
+\pagestyle{plain}
+\twocolumn
+%\onecolumn
+
+\printbibliography
+\clearpage
+\printindex
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\cleardoublepage[empty]
+%\include{colophon}
+\end{document}
